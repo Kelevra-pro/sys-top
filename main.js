@@ -18,6 +18,7 @@ function createMainWindow() {
     resizable: isDev,
     webPreferences: {
       nodeIntegration: true,
+      contextIsolation: false,
     },
   })
 
