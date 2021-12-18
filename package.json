@@ -17,12 +17,12 @@
   "author": "Brad Traversy",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^13.1.7",
-    "electron-packager": "^15.3.0",
-    "nodemon": "^2.0.12"
+    "electron": "^16.0.5",
+    "electron-packager": "^15.4.0",
+    "nodemon": "^2.0.15"
   },
   "dependencies": {
-    "electron-log": "^4.4.0",
+    "electron-log": "^4.4.3",
     "node-os-utils": "^1.3.5"
   }
 }
