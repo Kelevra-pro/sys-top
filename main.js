@@ -42,10 +42,14 @@ function createMainWindow() {
 }
 
 app.on('ready', () => {
-  createMainWindow()
+  createMainWindow();
 
-  const mainMenu = Menu.buildFromTemplate(menu)
-  Menu.setApplicationMenu(mainMenu)
+  mainWindow.webContents.on('dom-ready', () => {
+    mainWindow.webContents.send('settings:get', store.get('settings'));
+  });
+
+  const mainMenu = Menu.buildFromTemplate(menu);
+  Menu.setApplicationMenu(mainMenu);
 })
 
 const menu = [
