@@ -14,6 +14,10 @@
   "keywords": [
     "Electron"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kelevra-pro/sys-top.git"
+  },
   "author": "Damir Mukhamedinov",
   "license": "MIT",
   "devDependencies": {
